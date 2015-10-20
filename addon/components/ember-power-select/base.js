@@ -8,6 +8,7 @@ export default Ember.Component.extend({
   _searchText: '',
   _loadingOptions: false,
   attributeBindings: ['dir'],
+  matcher: null,
 
   // Lifecycle hooks
   didReceiveAttrs({ newAttrs: { options } }) {
